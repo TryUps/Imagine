@@ -1,0 +1,8 @@
+{
+    "name": "Calculator",
+    "productName": "Kalc",
+    "launch": "index.html",
+    "settings": {
+        "type": "webapp"
+    }
+}

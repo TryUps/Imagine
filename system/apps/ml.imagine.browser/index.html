@@ -1,0 +1,21 @@
+<app>
+    <layout>
+        <header>
+            Imagine Web Browser
+            <input type="text" placeholder="Procurar">
+        </header>
+        <content>
+            <webview src="https://www.google.com.br/"
+                style="position: relative; float: left;width: 100vw; height: calc(100vh - 50px);"
+                autosize="on"
+                partition="persist:link">Not allowed!</webview>
+            <script type="text/javascript">
+                
+                    const webview = document.querySelector("webview");
+                    webview.addEventListener('dom-ready', () => {
+                        //webview.openDevTools()
+                    })
+            </script>
+        </content>
+    </layout>
+</app>

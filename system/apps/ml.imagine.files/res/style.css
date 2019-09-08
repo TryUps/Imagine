@@ -11,7 +11,8 @@ layout {
     height: 100vh;
 }
 header {
-    background: greenyellow;
+    background: linear-gradient(120deg,blue,deepskyblue);
+    background-size: 200%;
     float: left;
     grid-area: header;
 }

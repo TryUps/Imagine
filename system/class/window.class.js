@@ -117,6 +117,7 @@ win.prototype.open = function({appid, flags, settings}){
         start: function(event, ui) { 
             $("window").removeClass("active");
             ui.helper.addClass('active'); 
+            ui.helper.removeClass("center");
         }
     }).resizable();
     $("layout > desktop > [appid='"+app.id+"']").delay(100).fadeIn(500);

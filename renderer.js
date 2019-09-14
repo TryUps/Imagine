@@ -9,8 +9,6 @@ let win = require('electron').remote.getCurrentWindow()
 const isDark = function(){
     if(store.get('isDarkMode')){
         return false;
-    }else{
-        return false;
     }
 }
 

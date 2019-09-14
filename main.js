@@ -9,7 +9,7 @@ const Store = require('electron-store');
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-function createWindow () {
+const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800,

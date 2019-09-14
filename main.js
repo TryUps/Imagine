@@ -18,7 +18,7 @@ const createWindow = () => {
     icon: path.join(__dirname, 'assets/icons/64x64.png'),
     useContentSize: false,
     transparent: false,
-    title: '',
+    title: 'Imagine OS',
     show: false,
     webPreferences: {
       nodeIntegration: true,

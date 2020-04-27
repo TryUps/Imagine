@@ -35,6 +35,8 @@ const createWindow = () => {
     slashes: true
   }))
 
+  app.commandLine.appendArgument("--enable-features=Metal");
+
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 

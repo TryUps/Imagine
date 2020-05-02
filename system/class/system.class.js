@@ -1,28 +1,11 @@
-const system = function(settings){
-    this.configfile = settings;
+const System = function(options){
+
 }
 
-system.prototype.create = function(){
-    return false;
+System.prototype.load = async function(){
+    let response = await fetch('layout/desktop/desktop.html')
+    let responseText = await response.text()
+    document.querySelector('imagine.container').innerHTML = responseText
 }
 
-system.prototype.build = {
-    element: function(ele){
-        console.log(ele);
-    }
-}
-
-system.prototype.load = function({el,url,time,fade}){
-    var el = el || "body";
-    var url = url || "./";
-    var time = time || 0;
-    var fade = fade || 0;
-    var page = $.get({url: url,async: false}).responseText || "Error !";
-
-    setTimeout(function() {
-      $(el).empty();
-      $(el).html(page).hide().fadeIn(fade);
-    }, time);
-}
-
-module.exports = system;
+module.exports = exports = System

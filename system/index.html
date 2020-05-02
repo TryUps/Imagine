@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Imagine OS</title>
-    <link rel="stylesheet" type="text/css" href="ui/imagine.ui.reset/reset.css">
-    <link rel="stylesheet" type="text/css" href="libs/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="ui/imagine.ui/style/style.css">
-    <link rel="stylesheet" type="text/css" href="ui/imagine.ui.framework/all.css">
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Imagine OS 1.2</title>
+    <link rel="stylesheet" href="layout/css/global.css">
+    <link rel="stylesheet" href="scripts/jquery-ui.min.css">
+    <link rel="stylesheet" href="layout/css/style.css">    
 </head>
-<body class="Imagine">
-    <main class="imagine-loader">
-        <error>Error: Falied running Imagine OS.</error>
-    </main>
-    <div class="scripts">
-        <script type="text/javascript" src="./modules/jquery.js"></script>
-        <script type="text/javascript" src="./modules/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="./plugins/less.plugin.js"></script>
-        <script type="text/javascript" src="./libs/less.min.js"></script>
-        <script type="text/javascript" src="./libs/base.js"></script>
-        <script type="text/javascript" src="./libs/desktop.js"></script>
-    </div>
+<body>
+    <imagine class="container imagine-loader">
+        <!-- Open ImagineOS Container -->
+        <noscript>
+            <imagine-cli class="noscript">
+
+            </imagine-cli>
+        </noscript>
+        <!-- Close ImagineOS Container -->
+    </imagine>
+    <script src="imagine.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.shadow.js"></script>
+    <script src="libs/base.lib.js"></script>
+    <script src="libs/desktop.lib.js"></script>
+    <script src="libs/window.lib.js"></script>
+    <script src="class/nap.class.js"></script>
 </body>
 </html>
